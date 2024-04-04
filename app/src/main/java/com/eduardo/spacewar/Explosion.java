@@ -20,9 +20,13 @@ public class Explosion {
         explosion[6] = BitmapFactory.decodeResource(context.getResources(), R.drawable.explosion6);
         explosion[7] = BitmapFactory.decodeResource(context.getResources(), R.drawable.explosion7);
         explosion[8] = BitmapFactory.decodeResource(context.getResources(), R.drawable.explosion8);
+        explosionFrame = 0;
         this.ex = ex;
         this.ey = ey;
     }
 
+    public Bitmap getExplosion(int explosionFrame) {
 
+        return explosion[explosionFrame];
+    }
 }
